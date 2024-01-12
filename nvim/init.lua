@@ -373,7 +373,7 @@ local function map(mode, lhs, rhs, opts)
 end
 
 -- nvim-metals
-g["metals_server_version"] = "0.11.2"
+g["metals_server_version"] = "0.11.6"
 
 vim.opt_global.shortmess:remove("F"):append("c")
 
