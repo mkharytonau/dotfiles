@@ -13,7 +13,6 @@
     "editor.lineNumbers": "on",
     "metals.showImplicitArguments": false,
     "metals.serverVersion": "1.2.0",
-    "workbench.colorTheme": "Default Light+",
     "editor.minimap.enabled": false,
     "workbench.editor.showTabs": "single",
     "editor.cursorStyle": "line",
@@ -45,7 +44,6 @@
     "workbench.colorCustomizations": {
         "editorHint.foreground": "#0044ff",
     },
-    "cmake.configureOnOpen": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "terminal.integrated.scrollback": 10000,
     "editor.tabSize": 2,
