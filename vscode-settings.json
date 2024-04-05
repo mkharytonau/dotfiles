@@ -12,7 +12,9 @@
     "workbench.editor.enablePreview": false,
     "editor.lineNumbers": "on",
     "metals.showImplicitArguments": false,
-    "metals.serverVersion": "1.2.0",
+    "metals.serverVersion": "1.2.2",
+    "metals.javaHome": "/Users/nik.v.kharitonov/Software/jdk-17.0.2.jdk/Contents/Home/",
+    "metals.bloopSbtAlreadyInstalled": true,
     "editor.minimap.enabled": false,
     "workbench.editor.showTabs": "single",
     "editor.cursorStyle": "line",
@@ -41,6 +43,7 @@
     "vscode-pets.throwBallWithMouse": true,
     "explorer.confirmDelete": false,
     "cSpell.diagnosticLevel": "Hint",
+    "cSpell.language": "en,ru",
     "workbench.colorCustomizations": {
         "editorHint.foreground": "#0044ff",
     },
@@ -48,5 +51,6 @@
     "terminal.integrated.scrollback": 10000,
     "editor.tabSize": 2,
     "git.suggestSmartCommit": false,
+    "workbench.colorTheme": "Noctis Minimus",
     "workbench.activityBar.location": "top",
 }

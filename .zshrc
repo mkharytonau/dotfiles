@@ -4,6 +4,7 @@ export DOTFILES=~/Projects/dotfiles
 
 # Setup zsh completion
 source $DOTFILES/zsh/completion.zsh
+source <(~/bin/kubectl completion zsh)
 
 # Setup https://github.com/zsh-users/zsh-autosuggestions
 source ~/Projects/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -55,8 +56,7 @@ alias ll="ls -lah"
 
 precmd () {print -Pn "\e]0;%~\a"}
 
-# Add Homebrew executable to PATH
-export PATH=/opt/homebrew/bin:$PATH
+export PATH=/opt/homebrew/bin:~/Software/jdk-17.0.2.jdk/Contents/Home/bin:~/Library/Application\ Support/Coursier/bin:~/bin:$PATH
 
 # zsh history setup
 export HISTSIZE=500000
