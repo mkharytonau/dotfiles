@@ -38,13 +38,25 @@ if type rg &> /dev/null; then
   export FZF_DEFAULT_OPTS='-m --height 50% --border'
 fi
 
+# Remap § to `
+# See https://gist.github.com/paultheman/808be117d447c490a29d6405975d41bd.
+# Use hidutil property --set '{"UserKeyMapping":[]}' to revert.
+function remap_backtick() {
+  hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000064,"HIDKeyboardModifierMappingDst":0x700000035},{"HIDKeyboardModifierMappingSrc":0x700000035,"HIDKeyboardModifierMappingDst":0x700000064}]}'
+}
+
+remap_backtick()
+
+# point testcontainers to docker runtime
+export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
+
 # Git aliases
 alias gs="git status"
 alias gf="git fetch"
 alias gl="git log"
 alias gr="git rebase"
-alias gp="git push"
-alias gpf="git push --force"
+alias gp="git pull"
+alias gcm="git checkout master"
 
 alias cl="clear"
 alias r="python3 ~/Software/ranger/ranger.py"
